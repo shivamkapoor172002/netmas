@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+  font-family: 'Pirulen';
+  src: url('./assets/pirulen/pirulen-rg.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'HannariFont';
+    src: url('./assets/Hannari-Regular.ttf') format('ttf');
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Adjust the main wrapper to fill the screen */
+/* Apply these styles to reset margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Optional: Ensure padding and border are included in the element's total width and height */
+  }
+  
+  /* Adjust the main wrapper to fill the screen */
+  .app-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Adjust the main content to fill the remaining space */
+  .main-content {
+    flex-grow: 1;
+  }
+  
+
+/* Optionally, you can add styles for smooth scrolling */
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+  .text-5xl {
+    font-size: 2rem; /* Adjust font size for smaller screens */
+    padding: 10px; /* Adjust padding as needed */
+  }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); /* Adjust opacity as needed */
+  z-index: 1; /* Ensure it's above the video */
+}
+
+.animate {
+  position: relative; /* Position relative for absolute positioning of pseudo-elements */
+}
+
+.animate:before,
+.animate:after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 0;
+  height: 0;
+  background: transparent;
+}
+
+.animate:before {
+  border: 2px solid transparent;
+}
+
+.animate:after {
+  border: 2px solid transparent;
+}
+
+.animate:hover:before {
+  animation: animate1 0.5s linear forwards;
+}
+
+.animate:hover:after {
+  animation: animate2 0.5s linear forwards;
+}
+
+@keyframes animate1 {
+  0% {
+    width: 0;
+    height: 0;
+    border-top-color: rgb(125 211 252 / var(--tw-bg-opacity));
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  50% {
+    width: 100%;
+    height: 0;
+    border-top-color: rgb(125 211 252 / var(--tw-bg-opacity));
+    border-right-color: rgb(125 211 252 / var(--tw-bg-opacity));
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    border-top-color: rgb(125 211 252 / var(--tw-bg-opacity));
+    border-right-color: rgb(125 211 252 / var(--tw-bg-opacity));
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    width: 0;
+    height: 0;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: rgb(125 211 252 / var(--tw-bg-opacity));
+  }
+  50% {
+    width: 0;
+    height: 100%;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: rgb(125 211 252 / var(--tw-bg-opacity));
+    border-left-color: rgb(125 211 252 / var(--tw-bg-opacity));
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: rgb(125 211 252 / var(--tw-bg-opacity));
+    border-left-color: rgb(125 211 252 / var(--tw-bg-opacity));
+  }
+}
+
+
+.animate-black {
+  position: relative; /* Position relative for absolute positioning of pseudo-elements */
+}
+
+.animate-black:before,
+.animate-black:after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 0;
+  height: 0;
+  background: transparent;
+}
+
+.animate-black:before {
+  border: 2px solid transparent;
+}
+
+.animate-black:after {
+  border: 2px solid transparent;
+}
+
+.animate-black:hover:before {
+  animation: animate3 0.5s linear forwards;
+}
+
+.animate-black:hover:after {
+  animation: animate4 0.5s linear forwards;
+}
+
+@keyframes animate3 {
+  0% {
+    width: 0;
+    height: 0;
+    border-top-color: rgb(31 41 55 / var(--tw-text-opacity));
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  50% {
+    width: 100%;
+    height: 0;
+    border-top-color: rgb(31 41 55 / var(--tw-text-opacity));
+    border-right-color: rgb(31 41 55 / var(--tw-text-opacity));
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    border-top-color: rgb(31 41 55 / var(--tw-text-opacity));
+    border-right-color: rgb(31 41 55 / var(--tw-text-opacity));
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+}
+
+@keyframes animate4 {
+  0% {
+    width: 0;
+    height: 0;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: rgb(31 41 55 / var(--tw-text-opacity));
+  }
+  50% {
+    width: 0;
+    height: 100%;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: rgb(31 41 55 / var(--tw-text-opacity));
+    border-left-color: rgb(31 41 55 / var(--tw-text-opacity));
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: rgb(31 41 55 / var(--tw-text-opacity));
+    border-left-color: rgb(31 41 55 / var(--tw-text-opacity));
+  }
+}
+
+.form-parallax {
+  position: relative;
+  transform: translateY(calc(-50% + var(--scrollY)));
+  transition: transform 0.1s ease-out;
+}
+
+.circular-container {
+  /* Set border-radius to make the elements circular */
+  border-radius: 50%;
+  /* Add your desired border thickness and color */
+  border: 8px solid #B4DEF1; /* Adjust thickness and color as needed */
+}
+
+.marquee {
+  white-space: nowrap;
+  overflow: hidden;
+  animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.dropdown-menu {
+  /* Positioning */
+  position: absolute;
+  top: calc(100% + 10px); /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  
+  /* Styling */
+  width: 400px; /* Adjust as needed */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.text-sky-950 p {
+  text-align: center;
+  direction: rtl;
+}
+
+.slider-container {
+  max-width: 100%; /* Ensure the slider doesn't overflow its parent container */
+  overflow: hidden; /* Hide any content that overflows the container */
+}
+
+.slider {
+  width: 100%; /* Make the slider fill the available space */
+  max-width: 100%; /* Ensure the slider doesn't exceed its parent container */
+}
+
+.centered-text {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.section-link:hover {
+  font-weight: 500;
+  font-size: 1em; /* Adjust the size as needed */
+  transition: all 0.2s ease; /* Add animation transition */
+}
+
+.product-image {
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.checkbox-label {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.rounded-checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  margin-right: 0.5em;
+  border: 1px solid #ccc;
+  position: relative;
+}
+
+@media (max-width: 767.98px) {
+  .rounded-checkbox {
+    width: .5em;
+    height: .5em;
+  }
+}
+
+.rounded-checkbox:checked {
+  background-color: transparent;
+}
+
+.rounded-checkbox::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+@media (max-width: 767.98px) {
+  .rounded-checkbox::before {
+    width: .2em;
+    height: .2em;
+  }
+}
+
+.rounded-checkbox:checked::before {
+  background-color: black;
+}
+
+/* Animation effect for the filled circle */
+.rounded-checkbox:checked::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+  background-color: #5C5C5C;
+  transition: width 0.3s ease, height 0.3s ease; /* Add transition for smooth animation */
+}
+
+@media (max-width: 767.98px) {
+  .rounded-checkbox::after {
+    width: .2em;
+    height: .2em;
+  }
+}
+
+/* Additional CSS to remove animation effect from previously selected checkbox */
+.rounded-checkbox:not(:checked) + .rounded-checkbox::after {
+  width: 0; /* Set width to 0 to hide the filled circle */
+  height: 0; /* Set height to 0 to hide the filled circle */
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30px;
+  height: 20px; /* Increased height for better clickability */
+  cursor: pointer;
+  gap: 5px; /* Increased gap between lines */
+}
+
+.line {
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+  transition: transform 0.3s ease-in-out;
+}
+
+.open .line-1 {
+  transform-origin: bottom;
+  transform: translateY(8px) rotate(45deg);
+  background: gray;
+}
+
+.open .line-2 {
+  opacity: 0;
+}
+
+.open .line-3 {
+  transform-origin: top;
+  transform: translateY(-8px) rotate(-45deg);
+  background: gray;
+}
+
+@keyframes appearFromCorner {
+  0% {
+    transform: scale(0) translate(50%, -50%);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) translate(0, 0);
+    opacity: 1;
+  }
+}
+
+.animated-image {
+  animation: appearFromCorner 0.5s ease forwards;
+  transform-origin: top right;
+}
