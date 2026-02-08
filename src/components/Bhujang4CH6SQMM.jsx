@@ -11,24 +11,23 @@ import DOWNLOAD from "../assets/icons/file-download.png";
 
 const ProductImageWithHover = ({ imageUrl, productName }) => {
     const [hovered, setHovered] = useState(false);
-  
+
     return (
-      <div
-        className="h-24 w-28 md:h-[70px] md:w-[80px] bg-[#D9D9D9] cursor-pointer relative overflow-hidden rounded-md p-1"
-        onMouseEnter={() => setHovered(true)}
-        onMouseLeave={() => setHovered(false)}
-      >
-        <img src={imageUrl} className="w-full h-full object-cover" alt="" />
         <div
-          className={`absolute inset-0 bg-gray-100 bg-opacity-50 transition-transform ${
-            hovered ? "translate-y-0 delay-100" : "translate-y-full delay-200"
-          } flex justify-center items-center`}
+            className="h-24 w-28 md:h-[70px] md:w-[80px] bg-[#D9D9D9] cursor-pointer relative overflow-hidden rounded-md p-1"
+            onMouseEnter={() => setHovered(true)}
+            onMouseLeave={() => setHovered(false)}
         >
-          <span className="text-white md:text-[11px] text-center gap-1">{productName}</span>
+            <img src={imageUrl} className="w-full h-full object-cover" alt="" />
+            <div
+                className={`absolute inset-0 bg-gray-100 bg-opacity-50 transition-transform ${hovered ? "translate-y-0 delay-100" : "translate-y-full delay-200"
+                    } flex justify-center items-center`}
+            >
+                <span className="text-white md:text-[11px] text-center gap-1">{productName}</span>
+            </div>
         </div>
-      </div>
     );
-  };
+};
 
 const Bhujang4CH6SQMM = () => {
 
@@ -36,11 +35,11 @@ const Bhujang4CH6SQMM = () => {
         const images = document.querySelectorAll(".product-image");
         let delay = 900;
         let duration = 2000;
-      
+
         images.forEach((image, index) => {
-          image.style.animation = `fadeIn ${duration / 1000}s ease ${delay * index / 1000}s forwards`;
+            image.style.animation = `fadeIn ${duration / 1000}s ease ${delay * index / 1000}s forwards`;
         });
-      }, []);
+    }, []);
 
     return (
         <div className="w-full py-10 font-roboto border-solid border-l-0 border-r-0 border-b-0 border-t-2 border-[#D9D9D9]">
@@ -70,9 +69,9 @@ const Bhujang4CH6SQMM = () => {
                         Premium Armored Speaker Cable – Bhujang 4CH6SQMM
                     </div>
                     <div className="text-sm font-normal tracking-wide leading-6 md:text-[12px] text-[#424242] pb-6">
-                        High-performance armored multi-core speaker cable engineered for professional AV, 
-                        defense installations, auditoriums, and long-distance high-power transmission. 
-                        Designed with XLPE M9 insulation, stainless steel strip armoring, and 10 AWG 
+                        High-performance armored multi-core speaker cable engineered for professional AV,
+                        defense installations, auditoriums, and long-distance high-power transmission.
+                        Designed with XLPE M9 insulation, stainless steel strip armoring, and 10 AWG
                         high-strand copper conductors.
                     </div>
 
@@ -139,11 +138,6 @@ const Bhujang4CH6SQMM = () => {
                             <span className="bg-purple-200 px-3 py-1 rounded-full">GMP Compliant</span>
                         </div>
                     </div>
-
-                    {/* Address */}
-                    <div className="bg-gray-100 p-4 rounded-lg text-sm text-[#555]">
-                        <span className="font-semibold">Address:</span> A-70-SECTOR 33, Noida, Uttar Pradesh, 201301, India
-                    </div>
                 </div>
 
                 {/* Other Products */}
@@ -153,24 +147,24 @@ const Bhujang4CH6SQMM = () => {
                     </div>
                     <div className="flex gap-5 md:gap-6 lg:gap-10">
                         <Link to={"/bhujang-8ch6sqmm"} className="no-underline">
-                        <ProductImageWithHover imageUrl={BHUJANG} productName={"Bhujang 8CH"} />
+                            <ProductImageWithHover imageUrl={BHUJANG} productName={"Bhujang 8CH"} />
                         </Link>
                         <Link to={"/speaker-cable"} className="no-underline">
-                        <ProductImageWithHover imageUrl={SPEAKER} productName={"Speaker Cable"} />
+                            <ProductImageWithHover imageUrl={SPEAKER} productName={"Speaker Cable"} />
                         </Link>
                         <Link to={"/microphone-cable"} className="no-underline">
-                        <ProductImageWithHover imageUrl={MICROPHONE} productName={"Microphone"} />
+                            <ProductImageWithHover imageUrl={MICROPHONE} productName={"Microphone"} />
                         </Link>
                     </div>
                     <div className="flex gap-5 md:gap-6 lg:gap-10">
                         <Link to={"/snake-cable"} className="no-underline">
-                        <ProductImageWithHover imageUrl={SNAKE} productName={"Snake Cable"} />
+                            <ProductImageWithHover imageUrl={SNAKE} productName={"Snake Cable"} />
                         </Link>
                         <Link to={"/rg-cable"} className="no-underline">
-                        <ProductImageWithHover imageUrl={RG6} productName={"RG6 Cable"} />
+                            <ProductImageWithHover imageUrl={RG6} productName={"RG6 Cable"} />
                         </Link>
                         <Link to={"/dmx-cable"} className="no-underline">
-                        <ProductImageWithHover imageUrl={DMX} productName={"DMX Cable"} />
+                            <ProductImageWithHover imageUrl={DMX} productName={"DMX Cable"} />
                         </Link>
                     </div>
                 </div>
@@ -178,10 +172,10 @@ const Bhujang4CH6SQMM = () => {
 
             {/* Download Button */}
             <div className="flex justify-end mb-[-40px] md:mb-[-40px] mt-9 product-image bg-[#D9D9D9]">
-              <a href="/Bhujang 4CH6SQMM.pdf" download className="bg-[#0092D1] no-underline flex items-center py-2 px-4 gap-2 md:gap-1">
-                  <img src={DOWNLOAD} className="w-4" alt="file-download-icon" />
-                  <span className="text-[#FFFFFF] font-light md:text-[10px]">Download Data Sheet</span>
-              </a>
+                <a href="/Bhujang 4CH6SQMM.pdf" download className="bg-[#0092D1] no-underline flex items-center py-2 px-4 gap-2 md:gap-1">
+                    <img src={DOWNLOAD} className="w-4" alt="file-download-icon" />
+                    <span className="text-[#FFFFFF] font-light md:text-[10px]">Download Data Sheet</span>
+                </a>
             </div>
         </div>
     )

@@ -138,11 +138,6 @@ const Bhujang8CH6SQMM = () => {
                             <span className="bg-purple-200 px-3 py-1 rounded-full">GMP Compliant</span>
                         </div>
                     </div>
-
-                    {/* Address */}
-                    <div className="bg-gray-100 p-4 rounded-lg text-sm text-[#555]">
-                        <span className="font-semibold">Address:</span> A-70-SECTOR 33, Noida, Uttar Pradesh, 201301, India
-                    </div>
                 </div>
 
                 {/* Other Products */}
