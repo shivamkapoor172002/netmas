@@ -50,6 +50,8 @@ const FloorBox = lazy(() => import("./components/FloorBox"));
 const CablesPage = lazy(() => import("./components/CablesPage"));
 const ProductsPage = lazy(() => import("./components/ProductsPage"));
 const ProjectorScreenPage = lazy(() => import("./components/ProjectorScreenPage"));
+const Bhujang4CH6SQMM = lazy(() => import("./components/Bhujang4CH6SQMM"));
+const Bhujang8CH6SQMM = lazy(() => import("./components/Bhujang8CH6SQMM"));
 
 const AppLayout = ({ component, pageProps }) => {
   return (
@@ -75,7 +77,7 @@ const appRouter = createBrowserRouter([
         element: <Body />,
       },
       {
-        path : "/contact",
+        path: "/contact",
         element: (
           <Suspense fallback={<h1>Loading...</h1>}>
             <Contact />
@@ -83,7 +85,7 @@ const appRouter = createBrowserRouter([
         )
       },
       {
-        path : "/about",
+        path: "/about",
         element: (
           <Suspense fallback={<h1>Loading...</h1>}>
             <AboutUsPage />
@@ -94,150 +96,162 @@ const appRouter = createBrowserRouter([
         path: "/products",
         element: (
           <Suspense fallback={<h1>Loading...</h1>}>
-            <ProductsPage/>
+            <ProductsPage />
           </Suspense>
         )
       },
       {
         path: "/cables",
         element: <Suspense fallback={<h1>Loading...</h1>}>
-                    <CablesPage />,
-                 </Suspense>
-        
+          <CablesPage />,
+        </Suspense>
+
       },
       {
         path: "/speaker-cable",
-        element:<Suspense fallback={<h1>Loading...</h1>}>
-                  <SpeakerCable />
-                </Suspense>,
-      },
-      {
-        path:"/microphone-cable",
-        element:<Suspense fallback={<h1>Loading...</h1>}>
-                  <MicrophoneCable />,
-                </Suspense>
-        
-      },
-      {
-        path:"/snake-cable",
-        element:<Suspense fallback={<h1>Loading...</h1>}>
-                  <SnakeCable/>,
-                </Suspense>
-      },
-      {
-        path:"/dmx-cable",
         element: <Suspense fallback={<h1>Loading...</h1>}>
-                  <DMXCable/>,
-                </Suspense>
+          <SpeakerCable />
+        </Suspense>,
       },
       {
-        path:"/rg-cable",
+        path: "/microphone-cable",
         element: <Suspense fallback={<h1>Loading...</h1>}>
-                  <RGCable />,
-                </Suspense>
-      },
-      {
-        path:"/utp-cable",
-        element: <Suspense fallback={<h1>Loading...</h1>}>
-                    <UTPCable />,
-                  </Suspense>
-      },
-      {
-        path:"/connectors",
-        element: <Suspense fallback={<h1>Loading...</h1>}>
-            <ConnectorPage />,
+          <MicrophoneCable />,
         </Suspense>
-        
+
+      },
+      {
+        path: "/snake-cable",
+        element: <Suspense fallback={<h1>Loading...</h1>}>
+          <SnakeCable />,
+        </Suspense>
+      },
+      {
+        path: "/dmx-cable",
+        element: <Suspense fallback={<h1>Loading...</h1>}>
+          <DMXCable />,
+        </Suspense>
+      },
+      {
+        path: "/rg-cable",
+        element: <Suspense fallback={<h1>Loading...</h1>}>
+          <RGCable />,
+        </Suspense>
+      },
+      {
+        path: "/utp-cable",
+        element: <Suspense fallback={<h1>Loading...</h1>}>
+          <UTPCable />,
+        </Suspense>
+      },
+      {
+        path: "/connectors",
+        element: <Suspense fallback={<h1>Loading...</h1>}>
+          <ConnectorPage />,
+        </Suspense>
+
       },
       {
         path: "/ep-connector",
         element: <Suspense fallback={<h1>Loading...</h1>}>
           <ConnectorEP />,
-          </Suspense>
+        </Suspense>
       },
       {
         path: "/xlr-connector",
-        element:<Suspense fallback={<h1>Loading...</h1>}>
-        <ConnectorXLR />,
+        element: <Suspense fallback={<h1>Loading...</h1>}>
+          <ConnectorXLR />,
         </Suspense>
       },
-      
+
       {
-        path:"/sj-connector",
+        path: "/sj-connector",
         element: <Suspense fallback={<h1>Loading...</h1>}>
-        <StereoJack />,
+          <StereoJack />,
         </Suspense>
       },
       {
-        path:"/mj-connector",
+        path: "/mj-connector",
         element: <Suspense fallback={<h1>Loading...</h1>}>
-        <MonoJack />,
+          <MonoJack />,
         </Suspense>
       },
       {
         path: "/speakon-connector",
         element: <Suspense fallback={<h1>Loading...</h1>}>
-        <SpeakOn />,
+          <SpeakOn />,
         </Suspense>
       },
       {
         path: "/product-amp-rack",
         element: <Suspense fallback={<h1>Loading...</h1>}>
           <AmpRack />
-          </Suspense>
+        </Suspense>
       },
       {
         path: "/product-floor-box",
         element: <Suspense fallback={<h1>Loading...</h1>}>
-        <FloorBox />
+          <FloorBox />
         </Suspense>
       },
       {
         path: "/product-projector-screen",
         element: <Suspense fallback={<h1>Loading...</h1>}>
-        <ProjectorScreenPage />
+          <ProjectorScreenPage />
         </Suspense>
       },
       {
         path: "/motorized-screen",
         element: <Suspense fallback={<h1>Loading...</h1>}>
-        <ProjectorMotorized />
+          <ProjectorMotorized />
         </Suspense>
       },
       {
         path: "/fixed-screen",
         element: <Suspense fallback={<h1>Loading...</h1>}>
-        <ProjectorFixed />
+          <ProjectorFixed />
         </Suspense>
       },
       {
         path: "/manual-screen",
         element: <Suspense fallback={<h1>Loading...</h1>}>
-        <ManualScreen />
+          <ManualScreen />
         </Suspense>
       },
       {
         path: "/portable-screen",
         element: <Suspense fallback={<h1>Loading...</h1>}>
-        <PortableScreen />
+          <PortableScreen />
         </Suspense>
       },
       {
         path: "/format-screen",
         element: <Suspense fallback={<h1>Loading...</h1>}>
-        <FormatScreen />
+          <FormatScreen />
         </Suspense>
       },
       {
         path: "/folding-screen",
         element: <Suspense fallback={<h1>Loading...</h1>}>
-        <FoldingBigScreen />
+          <FoldingBigScreen />
         </Suspense>
       },
       {
         path: "/product-cable-manager",
         element: <Suspense fallback={<h1>Loading...</h1>}>
-        <CableManager />
+          <CableManager />
+        </Suspense>
+      },
+      {
+        path: "/bhujang-4ch6sqmm",
+        element: <Suspense fallback={<h1>Loading...</h1>}>
+          <Bhujang4CH6SQMM />
+        </Suspense>
+      },
+      {
+        path: "/bhujang-8ch6sqmm",
+        element: <Suspense fallback={<h1>Loading...</h1>}>
+          <Bhujang8CH6SQMM />
         </Suspense>
       },
 

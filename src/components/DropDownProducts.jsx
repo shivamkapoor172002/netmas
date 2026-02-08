@@ -19,33 +19,43 @@ const DropDownProducts = () => {
                             <li className="flex items-center">
                                 <img src={RIGHT_ARROW} className="h-4 w-4 md:mb-4 lg:mb-7 md:w-3 md:h-3" alt="" />
                                 <Link to={"/microphone-cable"} className="section-link no-underline"><span className="text-black no-underline">Microphone Cable</span></Link>
-                                
-                            </li>                            
+
+                            </li>
                             <li className="flex items-center">
                                 <img src={RIGHT_ARROW} className="h-4 w-4 md:mb-4 lg:mb-7 md:w-3 md:h-3" alt="" />
                                 <Link to={"/speaker-cable"} className="text-black no-underline section-link">Speaker Cable</Link>
-                                
+
                             </li>
                             <li className="flex items-center">
                                 <img src={RIGHT_ARROW} className="h-4 w-4 md:mb-4 lg:mb-7 md:w-3 md:h-3" alt="" />
                                 <Link to={"/utp-cable"} className="no-underline section-link"><span className="text-black">CAT6 UTP Cable</span></Link>
-                                
+
                             </li>
 
                             <li className="flex items-center">
                                 <img src={RIGHT_ARROW} className="h-4 w-4 md:mb-4 lg:mb-7 md:w-3 md:h-3" alt="" />
                                 <Link to={"/rg-cable"} className="no-underline section-link"><span className="text-black">RG-6/U Cable</span></Link>
-                                
+
                             </li>
                             <li className="flex items-center">
                                 <img src={RIGHT_ARROW} className="h-4 w-4 md:mb-4 lg:mb-7 md:w-3 md:h-3" alt="" />
                                 <Link to={"/snake-cable"} className="no-underline section-link"><span className="text-black">Snake Cable</span></Link>
-                                
+
                             </li>
                             <li className="flex items-center">
                                 <img src={RIGHT_ARROW} className="h-4 w-4 md:mb-4 md:w-3 md:h-3" alt="" />
                                 <Link to={"/dmx-cable"} className="no-underline section-link"><span className="text-black">DMX Cable</span></Link>
-                                
+
+                            </li>
+                            <li className="flex items-center">
+                                <img src={RIGHT_ARROW} className="h-4 w-4 md:mb-4 md:w-3 md:h-3" alt="" />
+                                <Link to={"/bhujang-4ch6sqmm"} className="no-underline section-link"><span className="text-black">Bhujang 4CH6SQMM</span></Link>
+
+                            </li>
+                            <li className="flex items-center">
+                                <img src={RIGHT_ARROW} className="h-4 w-4 md:mb-4 md:w-3 md:h-3" alt="" />
+                                <Link to={"/bhujang-8ch6sqmm"} className="no-underline section-link"><span className="text-black">Bhujang 8CH6SQMM</span></Link>
+
                             </li>
                         </ul>
                     </div>
@@ -57,7 +67,7 @@ const DropDownProducts = () => {
                     <Link to={"/connectors"} className="no-underline">
                         <span className="text-lg font-normal text-black md:text-[12px]">Connectors</span>
                     </Link>
-                    
+
                     <img src={DOWN_ARROW} className="w-5 h-5" alt="" />
                 </div>
                 <div className="flex gap-6 pl-8">
@@ -66,20 +76,20 @@ const DropDownProducts = () => {
                             <li className="flex items-center">
                                 <img src={RIGHT_ARROW} className="h-4 w-4 md:mb-4 lg:mb-16 md:w-3 md:h-3" alt="" />
                                 <Link to={"/sj-connector"} className="no-underline section-link"><span className="text-black">Stereo Jack Connector</span></Link>
-                                
+
                             </li>
                             <li className="flex items-center">
                                 <img src={RIGHT_ARROW} className="h-4 w-4 md:mb-4 lg:mb-16 md:w-3 md:h-3" alt="" />
                                 <Link to={"/mj-connector"} className="no-underline section-link"><span className="text-black">Mono Jack Connector</span></Link>
-                                
+
                             </li>
                             <li className="flex items-center">
                                 <img src={RIGHT_ARROW} className="h-4 w-4 md:mb-4 lg:mb-7 md:w-3 md:h-3" alt="" />
                                 <Link to={"/speakon-connector"} className="no-underline section-link"><span className="text-black">SpeakOn Connector</span></Link>
-                                </li>
+                            </li>
                             <li className="flex items-center">
                                 <img src={RIGHT_ARROW} className="h-4 w-4 md:mb-4 lg:mb-7 md:w-3 md:h-3" alt="" />
-                                <Link to={"/xlr-connector"} className="text-black no-underline section-link">XLR Connector</Link> 
+                                <Link to={"/xlr-connector"} className="text-black no-underline section-link">XLR Connector</Link>
                             </li>
                             <li className="flex items-center">
                                 <img src={RIGHT_ARROW} className="h-4 w-4 md:mb-4 lg:mb-7 md:w-3 md:h-3" alt="" />
@@ -103,36 +113,36 @@ const DropDownProducts = () => {
                             <li className="flex items-center">
                                 <img src={RIGHT_ARROW} className="h-4 w-4 md:mb-4 lg:mb-7 md:w-3 md:h-3" alt="" />
                                 <Link to={"/portable-screen"} className="section-link no-underline"><span className="text-black no-underline">Portable Screen</span></Link>
-                                
-                            </li>                            
+
+                            </li>
                             <li className="flex items-center">
                                 <img src={RIGHT_ARROW} className="h-4 w-4 md:mb-4 lg:mb-7 md:w-3 md:h-3" alt="" />
                                 <Link to={"/folding-screen"} className="text-black no-underline section-link">Folding Screen</Link>
-                                
+
                             </li>
                             <li className="flex items-center">
                                 <img src={RIGHT_ARROW} className="h-4 w-4 md:mb-4 lg:mb-7 md:w-3 md:h-3" alt="" />
                                 <Link to={"/manual-screen"} className="no-underline section-link"><span className="text-black">Manual Screen</span></Link>
-                                
+
                             </li>
                             <li className="flex items-center">
                                 <img src={RIGHT_ARROW} className="h-4 w-4 md:mb-4 lg:mb-7 md:w-3 md:h-3" alt="" />
                                 <Link to={"/fixed-screen"} className="no-underline section-link"><span className="text-black">Fixed Screen</span></Link>
-                                
+
                             </li>
                             <li className="flex items-center">
                                 <img src={RIGHT_ARROW} className="h-4 w-4 md:mb-4 lg:mb-16 md:w-3 md:h-3" alt="" />
                                 <Link to={"/format-screen"} className="no-underline section-link"><span className="text-black">21:9 Format Screen</span></Link>
-                                
+
                             </li>
                             <li className="flex items-center">
                                 <img src={RIGHT_ARROW} className="h-4 w-4 md:mb-4 lg:mb-7 md:w-3 md:h-3" alt="" />
                                 <Link to={"/motorized-screen"} className="no-underline section-link"><span className="text-black">Motorized Screen</span></Link>
-                                
+
                             </li>
                         </ul>
                     </div>
-                    
+
                 </div>
             </div>
 
@@ -140,7 +150,7 @@ const DropDownProducts = () => {
                 <div className="transform transition duration-500 hover:scale-110">
                     <Link to={"/product-floor-box"} className="no-underline">
                         <span className="text-black">Floor Boxes</span>
-                    </Link>                    
+                    </Link>
                 </div>
                 <div className="transform transition duration-500 hover:scale-110">
                     <Link to={"/product-amp-rack"} className="no-underline">
@@ -154,7 +164,7 @@ const DropDownProducts = () => {
                 </div>
             </div>
         </div>
-       
+
     )
 };
 
